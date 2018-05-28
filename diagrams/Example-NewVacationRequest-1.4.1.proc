@@ -1369,7 +1369,7 @@
         <constraints xmi:type="process:ContractConstraint" xmi:id="_WQygf0UNEeeJkrA3PIO9Tw" expression="returnDateContract != null" errorMessage="The return date must be specified" name="returnDateMandatory">
           <inputNames>returnDateContract</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_WQyggEUNEeeJkrA3PIO9Tw" expression="import java.time.LocalDate;&#xA;&#xA;LocalDate.parse(returnDateContract).isAfter(LocalDate.parse(startDateContract))" errorMessage="The return date must be after the start date" name="returnAfterStart">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_WQyggEUNEeeJkrA3PIO9Tw" expression="import java.time.LocalDate;&#xA;&#xA;returnDateContract.isAfter(startDateContract)" errorMessage="The return date must be after the start date" name="returnAfterStart">
           <inputNames>startDateContract</inputNames>
           <inputNames>returnDateContract</inputNames>
         </constraints>
