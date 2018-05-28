@@ -40,7 +40,7 @@
         <condition xmi:type="expression:Expression" xmi:id="_Z3BTr62QEee5Me_XH8s6Lw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_Yl2RH0UNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_3HRsMK56EeeEYvutaolk4w" name="Production" version="7.5.2-001" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_3HRsMK56EeeEYvutaolk4w" name="Production" version="7.6.0-002" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_3HRsMa56EeeEYvutaolk4w">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_3HRsMq56EeeEYvutaolk4w" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_3HRsM656EeeEYvutaolk4w">

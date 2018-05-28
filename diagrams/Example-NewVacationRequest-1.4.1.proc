@@ -21,7 +21,7 @@
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_ZiZueK2QEee5Me_XH8s6Lw" name="deductDays" content="return requesterVacationAvailable.daysAvailableCounter - vacationRequest.numberOfDays" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZiZuea2QEee5Me_XH8s6Lw" name="requesterVacationAvailable" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationAvailable"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Bgt3UK6eEeeEYvutaolk4w" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zMbnsGKqEeiQA6BGi4iIGQ" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_WQx3JEUNEeeJkrA3PIO9Tw" type="JAVA_METHOD" expression="setDaysAvailableCounter">
               <inputTypes>java.lang.Integer</inputTypes>
@@ -199,7 +199,7 @@
                 <expression xmi:type="expression:ListExpression" xmi:id="__Hpe4kUUEeeJkrA3PIO9Tw">
                   <expressions xmi:type="expression:Expression" xmi:id="_ZidYxK2QEee5Me_XH8s6Lw" name="return requester email address" content="import org.bonitasoft.engine.identity.ContactData&#xD;&#xA;&#xD;&#xA;Long userId = vacationRequest.requesterBonitaBPMId&#xD;&#xA;&#xD;&#xA;ContactData professionalContactInfo =&#xD;&#xA; BonitaUsers.getUserProfessionalContactInfo(apiAccessor, userId)&#xD;&#xA;&#xD;&#xA;return professionalContactInfo.email" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
                     <referencedElements xmi:type="expression:Expression" xmi:id="_ZidYxa2QEee5Me_XH8s6Lw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
-                    <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BgueYK6eEeeEYvutaolk4w" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
+                    <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zMbnsWKqEeiQA6BGi4iIGQ" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
                   </expressions>
                 </expression>
               </parameters>
@@ -278,7 +278,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_ZiaVcq2QEee5Me_XH8s6Lw">
               <leftOperand xmi:type="expression:Expression" xmi:id="_ZiaVc62QEee5Me_XH8s6Lw" name="vacationRequest" content="vacationRequest" type="TYPE_VARIABLE" returnType="com.company.model.VacationRequest">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BgueYa6eEeeEYvutaolk4w" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zMbnsmKqEeiQA6BGi4iIGQ" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_ZiaVda2QEee5Me_XH8s6Lw" name="id" content="id" type="CONNECTOR_OUTPUT_TYPE">
                 <referencedElements xmi:type="definition:Output" xmi:id="__HpfGkUUEeeJkrA3PIO9Tw" name="id" type="java.lang.String"/>
@@ -304,7 +304,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_ZidYy62QEee5Me_XH8s6Lw" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_ZidYzK2QEee5Me_XH8s6Lw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_ZidYza2QEee5Me_XH8s6Lw" name="vacationRequest" content="vacationRequest" type="TYPE_VARIABLE" returnType="com.company.model.VacationRequest">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BgueYq6eEeeEYvutaolk4w" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zMbns2KqEeiQA6BGi4iIGQ" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_ZidYz62QEee5Me_XH8s6Lw" name="statusContract" content="statusContract" type="TYPE_CONTRACT_INPUT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_ZidY0K2QEee5Me_XH8s6Lw" name="statusContract" description="The status of the request after review:  approved or refused.">
@@ -317,7 +317,7 @@
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_ZidY0q2QEee5Me_XH8s6Lw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_ZidY062QEee5Me_XH8s6Lw" name="vacationRequest" content="vacationRequest" type="TYPE_VARIABLE" returnType="com.company.model.VacationRequest">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BgueY66eEeeEYvutaolk4w" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zMbntGKqEeiQA6BGi4iIGQ" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_ZidY1a2QEee5Me_XH8s6Lw" name="commentsContract" content="commentsContract" type="TYPE_CONTRACT_INPUT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_ZidY1q2QEee5Me_XH8s6Lw" name="commentsContract" description="For a refused request, a mandatory comment explaining why the request was refused. For an approved request, a comment is optional.">
@@ -330,7 +330,7 @@
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_ZidY2K2QEee5Me_XH8s6Lw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_ZidY2a2QEee5Me_XH8s6Lw" name="vacationRequest" content="vacationRequest" type="TYPE_VARIABLE" returnType="com.company.model.VacationRequest">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BgvFcK6eEeeEYvutaolk4w" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zMbntWKqEeiQA6BGi4iIGQ" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_ZidY262QEee5Me_XH8s6Lw" name="getPerformerId" content="return taskAssigneeId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
               <referencedElements xmi:type="expression:Expression" xmi:id="_ZidY3K2QEee5Me_XH8s6Lw" name="taskAssigneeId" content="taskAssigneeId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
@@ -355,7 +355,7 @@
               <expressions xmi:type="expression:ListExpression" xmi:id="_Ziem462QEee5Me_XH8s6Lw">
                 <expressions xmi:type="expression:Expression" xmi:id="_Ziem5K2QEee5Me_XH8s6Lw" name="requestId" content="requestId"/>
                 <expressions xmi:type="expression:Expression" xmi:id="_Ziem5a2QEee5Me_XH8s6Lw" name="vacationRequest - com.company.model.VacationRequest#getPersistenceId" content="getPersistenceId" type="TYPE_JAVA_METHOD_CALL" returnType="java.lang.Long">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BgvFca6eEeeEYvutaolk4w" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zMbntmKqEeiQA6BGi4iIGQ" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
                 </expressions>
               </expressions>
             </correlation>
@@ -677,7 +677,7 @@
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_ZiZufq2QEee5Me_XH8s6Lw" name="creditDays" content="return requesterVacationAvailable.daysAvailableCounter +&#xD;&#xA;vacationRequest.numberOfDays" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZiZuf62QEee5Me_XH8s6Lw" name="requesterVacationAvailable" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationAvailable"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BgvFcq6eEeeEYvutaolk4w" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zMbnt2KqEeiQA6BGi4iIGQ" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_WQyeREUNEeeJkrA3PIO9Tw" type="JAVA_METHOD" expression="setDaysAvailableCounter">
               <inputTypes>java.lang.Integer</inputTypes>
@@ -1015,7 +1015,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_Zid_3a2QEee5Me_XH8s6Lw" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_Zid_3q2QEee5Me_XH8s6Lw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_Zid_362QEee5Me_XH8s6Lw" name="vacationRequest" content="vacationRequest" type="TYPE_VARIABLE" returnType="com.company.model.VacationRequest">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BgvFc66eEeeEYvutaolk4w" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zMbnuGKqEeiQA6BGi4iIGQ" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_Zid_4a2QEee5Me_XH8s6Lw" name="statusContract" content="statusContract" type="TYPE_CONTRACT_INPUT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_Zid_4q2QEee5Me_XH8s6Lw" name="statusContract" description="The status of the request after review: approved or refused.">
@@ -1028,7 +1028,7 @@
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_Zid_5K2QEee5Me_XH8s6Lw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_Zid_5a2QEee5Me_XH8s6Lw" name="vacationRequest" content="vacationRequest" type="TYPE_VARIABLE" returnType="com.company.model.VacationRequest">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BgvFdK6eEeeEYvutaolk4w" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zMbnuWKqEeiQA6BGi4iIGQ" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_Zid_562QEee5Me_XH8s6Lw" name="commentsContract" content="commentsContract" type="TYPE_CONTRACT_INPUT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_Zid_6K2QEee5Me_XH8s6Lw" name="commentsContract" description=" For a refused request, a mandatory comment explaining why the request was refused. For an">
@@ -1041,7 +1041,7 @@
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_Zid_6q2QEee5Me_XH8s6Lw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_Zid_662QEee5Me_XH8s6Lw" name="vacationRequest" content="vacationRequest" type="TYPE_VARIABLE" returnType="com.company.model.VacationRequest">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BgvFda6eEeeEYvutaolk4w" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zMcOwGKqEeiQA6BGi4iIGQ" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_Zid_7a2QEee5Me_XH8s6Lw" name="getPerformerId" content="return taskAssigneeId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
               <referencedElements xmi:type="expression:Expression" xmi:id="_Zid_7q2QEee5Me_XH8s6Lw" name="taskAssigneeId" content="taskAssigneeId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
@@ -1078,17 +1078,17 @@
       <mandatorySymbol xmi:type="expression:Expression" xmi:id="_WQyf9kUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
       <mandatoryLabel xmi:type="expression:Expression" xmi:id="_WQyf90UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
       <data xmi:type="process:BusinessObjectData" xmi:id="_WQyf-EUNEeeJkrA3PIO9Tw" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_BgwTkK6eEeeEYvutaolk4w" name="createVacationRequest" content="import java.time.LocalDate;&#xD;&#xA;&#xD;&#xA;import com.company.model.VacationRequest&#xD;&#xA;&#xD;&#xA;// Create a new empty vacation request&#xD;&#xA;def newVacationRequest = new VacationRequest()&#xD;&#xA;&#xD;&#xA;// Get the id of the user who create the process instance using&#xD;&#xA;// Bonita Engine API&#xD;&#xA;def processAPI = apiAccessor.processAPI&#xD;&#xA;long userId = processAPI.getProcessInstance(processInstanceId).startedBy&#xD;&#xA;&#xD;&#xA;// Set the requester user id on the request&#xD;&#xA;newVacationRequest.requesterBonitaBPMId = userId&#xD;&#xA;&#xD;&#xA;// Update start and end date on the request&#xD;&#xA;newVacationRequest.startDate = LocalDate.parse(startDateContract)&#xD;&#xA;newVacationRequest.returnDate = LocalDate.parse(returnDateContract)&#xD;&#xA;&#xD;&#xA;// Update number of days&#xD;&#xA;newVacationRequest.numberOfDays = numberOfDaysContract&#xD;&#xA;&#xD;&#xA;// Set the status to pending&#xD;&#xA;newVacationRequest.status = &quot;pending&quot;&#xD;&#xA;&#xD;&#xA;newVacationRequest.newRequestProcessInstanceId = processInstanceId&#xD;&#xA;&#xD;&#xA;// Return the new object initialized&#xD;&#xA;return newVacationRequest" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.VacationRequest">
-          <referencedElements xmi:type="expression:Expression" xmi:id="_BgwTka6eEeeEYvutaolk4w" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_BgwTkq6eEeeEYvutaolk4w" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="com.bonitasoft.engine.api.APIAccessor"/>
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_BgwTk66eEeeEYvutaolk4w" name="startDateContract" description="The first day of vacation.">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_BgwTlK6eEeeEYvutaolk4w"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_zMcOwWKqEeiQA6BGi4iIGQ" name="createVacationRequest" content="import java.time.LocalDate;&#xD;&#xA;&#xD;&#xA;import com.company.model.VacationRequest&#xD;&#xA;&#xD;&#xA;// Create a new empty vacation request&#xD;&#xA;def newVacationRequest = new VacationRequest()&#xD;&#xA;&#xD;&#xA;// Get the id of the user who create the process instance using&#xD;&#xA;// Bonita Engine API&#xD;&#xA;def processAPI = apiAccessor.processAPI&#xD;&#xA;long userId = processAPI.getProcessInstance(processInstanceId).startedBy&#xD;&#xA;&#xD;&#xA;// Set the requester user id on the request&#xD;&#xA;newVacationRequest.requesterBonitaBPMId = userId&#xD;&#xA;&#xD;&#xA;// Update start and end date on the request&#xD;&#xA;newVacationRequest.startDate = startDateContract&#xD;&#xA;newVacationRequest.returnDate = returnDateContract&#xD;&#xA;&#xD;&#xA;// Update number of days&#xD;&#xA;newVacationRequest.numberOfDays = numberOfDaysContract&#xD;&#xA;&#xD;&#xA;// Set the status to pending&#xD;&#xA;newVacationRequest.status = &quot;pending&quot;&#xD;&#xA;&#xD;&#xA;newVacationRequest.newRequestProcessInstanceId = processInstanceId&#xD;&#xA;&#xD;&#xA;// Return the new object initialized&#xD;&#xA;return newVacationRequest" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.VacationRequest">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_zMcOwmKqEeiQA6BGi4iIGQ" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_zMcOw2KqEeiQA6BGi4iIGQ" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="com.bonitasoft.engine.api.APIAccessor"/>
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_zMcOxGKqEeiQA6BGi4iIGQ" name="startDateContract" type="LOCALDATE" description="The first day of vacation.">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_zMcOxWKqEeiQA6BGi4iIGQ"/>
           </referencedElements>
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_BgwTla6eEeeEYvutaolk4w" name="numberOfDaysContract" type="INTEGER" description="The number of days of vacation, not including non-working days.">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_BgwTlq6eEeeEYvutaolk4w"/>
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_zMcOxmKqEeiQA6BGi4iIGQ" name="numberOfDaysContract" type="INTEGER" description="The number of days of vacation, not including non-working days.">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_zMcOx2KqEeiQA6BGi4iIGQ"/>
           </referencedElements>
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_BgwTl66eEeeEYvutaolk4w" name="returnDateContract" description="The day the requester returns to work.">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_BgwTmK6eEeeEYvutaolk4w"/>
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_zMcOyGKqEeiQA6BGi4iIGQ" name="returnDateContract" type="LOCALDATE" description="The day the requester returns to work.">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_zMcOyWKqEeiQA6BGi4iIGQ"/>
           </referencedElements>
         </defaultValue>
       </data>
@@ -1229,7 +1229,7 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_WQygaUUNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_WQygakUNEeeJkrA3PIO9Tw" documentation="This actor represents the people who can review vacation requests if a manager does not review them in the specified time." name="vacationReviewerBackup"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_wq764K56EeeEYvutaolk4w" name="Production" version="7.5.2-001" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_wq764K56EeeEYvutaolk4w" name="Production" version="7.6.0-002" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_wq764a56EeeEYvutaolk4w">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_wq764q56EeeEYvutaolk4w" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_wq764656EeeEYvutaolk4w">
@@ -1354,10 +1354,10 @@
       <parameters xmi:type="parameter:Parameter" xmi:id="_WQygdUUNEeeJkrA3PIO9Tw" name="calendarServiceAccountP12File" typeClassname="java.lang.String"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_WQygdkUNEeeJkrA3PIO9Tw" name="calendarServiceAccountUser" typeClassname="java.lang.String"/>
       <contract xmi:type="process:Contract" xmi:id="_WQygd0UNEeeJkrA3PIO9Tw">
-        <inputs xmi:type="process:ContractInput" xmi:id="_Ziem-K2QEee5Me_XH8s6Lw" name="startDateContract" description="The first day of vacation.">
+        <inputs xmi:type="process:ContractInput" xmi:id="_Ziem-K2QEee5Me_XH8s6Lw" name="startDateContract" type="LOCALDATE" description="The first day of vacation.">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_Ziem-a2QEee5Me_XH8s6Lw"/>
         </inputs>
-        <inputs xmi:type="process:ContractInput" xmi:id="_Ziem-q2QEee5Me_XH8s6Lw" name="returnDateContract" description="The day the requester returns to work.">
+        <inputs xmi:type="process:ContractInput" xmi:id="_Ziem-q2QEee5Me_XH8s6Lw" name="returnDateContract" type="LOCALDATE" description="The day the requester returns to work.">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_Ziem-62QEee5Me_XH8s6Lw"/>
         </inputs>
         <inputs xmi:type="process:ContractInput" xmi:id="_Ziem_K2QEee5Me_XH8s6Lw" name="numberOfDaysContract" type="INTEGER" description="The number of days of vacation, not including non-working days.">
