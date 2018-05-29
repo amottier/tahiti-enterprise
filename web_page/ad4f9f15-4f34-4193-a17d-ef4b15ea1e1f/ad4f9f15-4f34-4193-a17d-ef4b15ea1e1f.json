@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.5.7",
   "id" : "ad4f9f15-4f34-4193-a17d-ef4b15ea1e1f",
   "name" : "newVacationRequestForm",
-  "lastUpdate" : 1527582564175,
+  "lastUpdate" : 1527602443006,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -250,7 +250,7 @@
         "type" : "component",
         "dimension" : {
           "xs" : 6,
-          "md" : 6,
+          "md" : 12,
           "lg" : 6
         },
         "propertyValues" : {
@@ -344,6 +344,38 @@
         },
         "reference" : "667bfffc-f35f-4b04-9c24-31c26530e0b7",
         "id" : "pbInput"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,<br/>consectetur,<br/>adipisci velit..."
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "2f38486f-c819-476f-90b2-c1e5f24f08e7",
+        "id" : "pbText"
       } ], [ {
         "type" : "component",
         "dimension" : {
