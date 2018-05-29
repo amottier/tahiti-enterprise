@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.5.7",
   "id" : "ad4f9f15-4f34-4193-a17d-ef4b15ea1e1f",
   "name" : "newVacationRequestForm",
-  "lastUpdate" : 1527525333141,
+  "lastUpdate" : 1527582564175,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -61,7 +61,9 @@
       "rows" : [ [ {
         "type" : "component",
         "dimension" : {
-          "xs" : 4
+          "xs" : 4,
+          "md" : 6,
+          "lg" : 6
         },
         "propertyValues" : {
           "alignment" : {
@@ -153,7 +155,103 @@
       }, {
         "type" : "component",
         "dimension" : {
-          "xs" : 6
+          "xs" : 4,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 1
+          },
+          "isDisplayed" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "placeholder" : {
+            "type" : "constant",
+            "value" : "The day the requester returns to work."
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.DatePickerWidget"
+          },
+          "label" : {
+            "type" : "constant",
+            "value" : "Return Date"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "type" : {
+            "type" : "constant"
+          },
+          "forceUTC" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbDatePicker"
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "formData.returnDateContract"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "dateFormat" : {
+            "type" : "constant",
+            "value" : "MM/dd/yyyy"
+          },
+          "readonly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "showToday" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "todayLabel" : {
+            "type" : "interpolation",
+            "value" : "Today"
+          }
+        },
+        "reference" : "f33ed18f-9c44-41c4-adac-be1feeafe7ff",
+        "id" : "pbDatePicker"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 6,
+          "md" : 6,
+          "lg" : 6
         },
         "propertyValues" : {
           "alignment" : {
@@ -246,98 +344,6 @@
         },
         "reference" : "667bfffc-f35f-4b04-9c24-31c26530e0b7",
         "id" : "pbInput"
-      } ], [ {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 4
-        },
-        "propertyValues" : {
-          "alignment" : {
-            "type" : "constant",
-            "value" : "left"
-          },
-          "labelWidth" : {
-            "type" : "constant",
-            "value" : 1
-          },
-          "isDisplayed" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "placeholder" : {
-            "type" : "constant",
-            "value" : "The day the requester returns to work."
-          },
-          "class" : {
-            "type" : "constant",
-            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.DatePickerWidget"
-          },
-          "label" : {
-            "type" : "constant",
-            "value" : "Return Date"
-          },
-          "labelPosition" : {
-            "type" : "constant",
-            "value" : "top"
-          },
-          "type" : {
-            "type" : "constant"
-          },
-          "forceUTC" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "dimension" : {
-            "type" : "constant",
-            "value" : 12
-          },
-          "widgetId" : {
-            "type" : "constant",
-            "value" : "pbDatePicker"
-          },
-          "value" : {
-            "type" : "variable",
-            "value" : "formData.returnDateContract"
-          },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "dateFormat" : {
-            "type" : "constant",
-            "value" : "MM/dd/yyyy"
-          },
-          "readonly" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "readOnly" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "required" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "showToday" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "todayLabel" : {
-            "type" : "interpolation",
-            "value" : "Today"
-          }
-        },
-        "reference" : "f33ed18f-9c44-41c4-adac-be1feeafe7ff",
-        "id" : "pbDatePicker"
       } ], [ {
         "type" : "component",
         "dimension" : {
